@@ -1,0 +1,7 @@
+<h1>Hello, world!</h1>
+<app-radio name="r1" [radioSelection]="selectionRadio1" (radioSelectionChange)="selectionRadio1 = $event"></app-radio>
+<label>Radio Option Selected: {{ selectionRadio1.toString() }}</label>
+<br />
+<br />
+<app-radio name="r2" [radioSelection]="selectionRadio2" (radioSelectionChange)="selectionRadio2 = $event"></app-radio>
+<label>Radio Option Selected: {{ selectionRadio2.toString() }}</label>

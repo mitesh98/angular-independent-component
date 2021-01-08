@@ -1,0 +1,36 @@
+<div class="form-check">
+  <input
+    class="form-check-input"
+    type="radio"
+    [name]="name"
+    id="radioInput1"
+    [value]="radioSelectionType.Option1"
+    [(ngModel)]="radioSelection"
+    (ngModelChange)="radioSelectionChangedByUser($event)"
+  />
+  <label class="form-check-label" for="radioInput1">Option 1</label>
+</div>
+<div class="form-check">
+  <input
+    class="form-check-input"
+    type="radio"
+    [name]="name"
+    id="radioInput2"
+    [value]="radioSelectionType.Option2"
+    [(ngModel)]="radioSelection"
+    (ngModelChange)="radioSelectionChangedByUser($event)"
+  />
+  <label class="form-check-label" for="radioInput2">Option 2</label>
+</div>
+<div class="form-check">
+  <input
+    class="form-check-input"
+    type="radio"
+    [name]="name"
+    id="radioInput3"
+    [value]="radioSelectionType.Both"
+    [(ngModel)]="radioSelection"
+    (ngModelChange)="radioSelectionChangedByUser($event)"
+  />
+  <label class="form-check-label" for="radioInput3">Both</label>
+</div>
